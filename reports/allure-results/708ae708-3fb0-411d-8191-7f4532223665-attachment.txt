@@ -1,0 +1,15 @@
+[32mINFO    [0m root:conftest.py:87 ============================================================
+[32mINFO    [0m root:conftest.py:89 STARTING TEST: test_e2e01[user_credentials0]
+[32mINFO    [0m root:conftest.py:90 ============================================================
+[32mINFO    [0m root:conftest.py:186 Browser launched: chrome (headless=False)
+[32mINFO    [0m utilities.common_methods:common_methods.py:210 Navigated to: https://rahulshettyacademy.com/client
+[32mINFO    [0m utilities.common_methods:common_methods.py:39 Page fully loaded
+[32mINFO    [0m utilities.common_methods:common_methods.py:86 Entered text in input[id='userEmail']: pquant@yopmail.com...
+[32mINFO    [0m utilities.common_methods:common_methods.py:86 Entered text in input[id='userPassword']: ABab$123...
+[32mINFO    [0m utilities.common_methods:common_methods.py:76 Clicked by role: button, name: Login
+[32mINFO    [0m utilities.common_methods:common_methods.py:76 Clicked by role: button, name:  ORDERS
+[32mINFO    [0m utilities.common_methods:common_methods.py:39 Page fully loaded
+[32mINFO    [0m utilities.common_methods:common_methods.py:183 Verified text 'Thank you for Shopping With Us' in .tagline
+[32mINFO    [0m root:conftest.py:95 COMPLETED TEST: test_e2e01[user_credentials0]
+[32mINFO    [0m root:conftest.py:96 ============================================================
+[32mINFO    [0m root:conftest.py:197 Browser closed

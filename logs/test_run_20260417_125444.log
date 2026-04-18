@@ -1,0 +1,15 @@
+2026-04-17 12:54:44,532 - INFO - ============================================================
+2026-04-17 12:54:44,534 - INFO - STARTING TEST: test_e2e01[user_credentials0]
+2026-04-17 12:54:44,535 - INFO - ============================================================
+2026-04-17 12:55:06,915 - INFO - Browser launched: chrome (headless=False)
+2026-04-17 12:55:10,726 - INFO - Navigated to: https://rahulshettyacademy.com/client
+2026-04-17 12:55:11,248 - INFO - Page fully loaded
+2026-04-17 12:55:12,979 - INFO - Entered text in input[id='userEmail']: pquant@yopmail.com...
+2026-04-17 12:55:13,248 - INFO - Entered text in input[id='userPassword']: ABab$123...
+2026-04-17 12:55:13,458 - INFO - Clicked by role: button, name: Login
+2026-04-17 12:55:14,207 - INFO - Clicked by role: button, name:  ORDERS
+2026-04-17 12:55:14,275 - INFO - Page fully loaded
+2026-04-17 12:55:14,773 - INFO - Verified text 'Thank you for Shopping With Us' in .tagline
+2026-04-17 12:55:14,782 - INFO - COMPLETED TEST: test_e2e01[user_credentials0]
+2026-04-17 12:55:14,792 - INFO - ============================================================
+2026-04-17 12:55:19,751 - INFO - Browser closed

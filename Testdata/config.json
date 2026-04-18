@@ -1,0 +1,20 @@
+{
+  "qa": {
+    "base_url": "https://rahulshettyacademy.com/client",
+    "timeout": 30000,
+    "retry_count": 2,
+    "screenshot_on_failure": true
+  },
+  "staging": {
+    "base_url": "https://staging.rahulshettyacademy.com/client",
+    "timeout": 45000,
+    "retry_count": 3,
+    "screenshot_on_failure": true
+  },
+  "prod": {
+    "base_url": "https://rahulshettyacademy.com/client",
+    "timeout": 60000,
+    "retry_count": 1,
+    "screenshot_on_failure": true
+  }
+}

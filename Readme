@@ -1,0 +1,85 @@
+-> Playwright Python Automation Framework - PageObject Model Design Pattern
+This project is a robust end-to-end automation suite built using Python, Playwright, and pytest. It follows the Page Object Model (POM) design pattern to ensure maintainability and scalability.
+
+📁 Project Structure
+
+Framework/: Contains the test execution logic and configurations.
+conftest.py: Global fixtures for browser setup and teardown.
+test_POMcode.py: Test suites implementing the page objects.
+pageObjects/: Contains page classes with element locators and page-specific actions.
+TestData/: Stores static data, configurations (config.json), and user credentials.
+utilities/: Helper methods and reusable utility functions.
+reports/: Automatically generated HTML test execution reports.
+screenshots/: Captured screenshots of test failures for debugging.
+
+⚙️ Configuration (pytest.ini)
+The project uses a pytest.ini file to streamline execution. This means you don't have to manually type complex flags in the terminal.
+
+Key Settings Defined:
+> testpaths: Automatically points to the Framework folder.
+> addopts: Pre-configured arguments including:
+
+--html=reports/pytest_report.html: Automatically generates a report in the reports folder.
+--self-contained-html: Ensures the report is a single portable file.
+-v: Enables verbose output for better debugging.
+
+🛠️ Prerequisites
+1. Python 3.8+ installed.
+2. PyCharm (or any preferred IDE).
+3. Virtual environment enabled (e.g., .venv).
+
+🚀 Getting Started
+1. Install Dependencies
+First, ensure you have the required packages installed:
+Bash :
+pip install playwright pytest pytest-playwright pytest-html
+
+2. Install Playwright Browsers
+Bash :
+playwright install
+
+🧪 Running Tests
+You can trigger tests using pytest. The configuration is pre-defined in pytest.ini.
+1. Run all tests:
+Bash
+pytest
+
+2. Run in Headed mode (UI visible):
+Bash
+pytest --headed
+
+3. Run a specific test file:
+Bash
+pytest Framework/test_POMcode.py
+
+📊 Reporting
+The framework is configured to generate an HTML report automatically after every run.
+
+> Location: reports/pytest_report.html
+> Format: Self-contained HTML with detailed pass/fail logs.
+
+## 📊 Advanced Reporting (Allure)
+This framework supports **Allure Reports** for a modern, dashboard-style view of test results.
+
+1. Install the Allure-Pytest Plugin  : Run : pip install allure-pytest
+2. **Generate Results**: Run `pytest`. Results are saved to `reports/allure-results`.
+3. **View Dashboard**: 
+   ```bash
+   allure serve reports/allure-results
+
+## 🛠️ Troubleshooting
+### Allure Java Error
+If you see a `JAVA_HOME` error when running `allure serve`:
+1. Ensure Java JDK 21 is installed.
+2. Set `JAVA_HOME` to the root installation folder (e.g., `C:\Program Files\Java\jdk-21.x.x`).
+3. Ensure the path does **not** end in `\bin`.
+
+OR Quick fix
+
+1. The Quick Fix (Terminal)
+You can fix this for your current session by running this command in your PyCharm terminal:
+
+Then try running allure serve reports/allure-results again.
+
+⚙️ Tip for PyCharm:
+Update TestData/config.json and TestData/credentials.json to manage environment URLs and user login data without modifying the test scripts.
