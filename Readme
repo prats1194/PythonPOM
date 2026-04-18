@@ -1,4 +1,4 @@
--> Playwright Python Automation Framework - PageObject Model Design Pattern
+-> Playwright Python Automation Framework - PageObject Model Design Pattern (Without Cucumber)
 This project is a robust end-to-end automation suite built using Python, Playwright, and pytest. It follows the Page Object Model (POM) design pattern to ensure maintainability and scalability.
 
 📁 Project Structure
